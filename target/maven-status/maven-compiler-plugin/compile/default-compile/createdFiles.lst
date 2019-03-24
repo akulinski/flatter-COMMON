@@ -1,0 +1,10 @@
+domain/User.class
+domain/QuestionnaireableOffer.class
+domain/Questionnaire.class
+domain/QuestionnaireableUser.class
+domain/Questionnaireable.class
+domain/UserDTO.class
+domain/CSVWritable.class
+domain/UserWithQuestionnaireDTO.class
+utils/ClusteringUtils.class
+domain/Authority.class

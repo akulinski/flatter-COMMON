@@ -1,6 +1,7 @@
 package domain;
 
 import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -20,15 +21,21 @@ import static utils.ClusteringUtils.weightMap;
 @NoArgsConstructor
 @Log4j2
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY,property = "name")
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "name")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = QuestionnaireableUser.class, name = "user"),
 
         @JsonSubTypes.Type(value = QuestionnaireableOffer.class, name = "offer")}
 )
+
 public abstract class Questionnaireable implements Clusterable, CSVWritable, Comparable<Questionnaireable>, Serializable {
+
+    public static final String OFFER = "offer";
+    public static final String USER = "user";
+
     @JsonProperty
     @JsonTypeId
+    @JsonDeserialize
     private String name;
 
     @JsonProperty
@@ -88,7 +95,7 @@ public abstract class Questionnaireable implements Clusterable, CSVWritable, Com
     public int compareTo(Questionnaireable o) {
 
         try {
-            return (int) (this.getSumOfPoints()-o.getSumOfPoints());
+            return (int) (this.getSumOfPoints() - o.getSumOfPoints());
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }

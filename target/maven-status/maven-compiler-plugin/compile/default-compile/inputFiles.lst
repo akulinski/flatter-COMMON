@@ -1,10 +1,13 @@
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/UserWithQuestionnaireDTO.java
+/home/albert/flatter/flatterCOMMON/src/main/java/domain/events/MessageSentEvent.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/CSVWritable.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/QuestionnaireableOffer.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/QuestionnaireableUser.java
+/home/albert/flatter/flatterCOMMON/src/main/java/domain/MessageDTO.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/Questionnaire.java
 /home/albert/flatter/flatterCOMMON/src/main/java/utils/ClusteringUtils.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/Questionnaireable.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/User.java
+/home/albert/flatter/flatterCOMMON/src/main/java/domain/ConversationDTO.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/Authority.java
 /home/albert/flatter/flatterCOMMON/src/main/java/domain/UserDTO.java

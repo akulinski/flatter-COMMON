@@ -5,8 +5,10 @@ domain/MessageDTO.class
 domain/Questionnaireable.class
 domain/CSVWritable.class
 utils/ClusteringUtils.class
+domain/events/ClusteringDataRequest.class
 domain/Authority.class
 domain/ConversationDTO.class
+domain/events/LoadedClusteringDataResponse.class
 domain/events/MessageSentEvent.class
 domain/QuestionnaireableUser.class
 domain/UserDTO.class
